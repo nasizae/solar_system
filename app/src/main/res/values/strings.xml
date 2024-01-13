@@ -9,4 +9,9 @@
     <string name="title">title</string>
     <string name="desc">desc</string>
     <string name="next">Далее</string>
+    <string name="solar_system">SOLAR SYSTEM</string>
+    <string name="planets">Planets</string>
+    <string name="stars">Stars</string>
+    <string name="name_planets">NAME</string>
+    <string name="info">Info</string>
 </resources>
