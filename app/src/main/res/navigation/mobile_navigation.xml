@@ -27,4 +27,24 @@
         android:name="com.example.planets.ui.onBoarding.OnboardingFragment"
         android:label="fragment_onboarding"
         tools:layout="@layout/fragment_onboarding" />
+    <fragment
+        android:id="@+id/infoPlanetsFragment"
+        android:name="com.example.planets.ui.home.planets.infoPlanets.InfoPlanetsFragment"
+        android:label="fragment_info_planets"
+        tools:layout="@layout/fragment_info_planets" />
+    <fragment
+        android:id="@+id/infoStarsFragment"
+        android:name="com.example.planets.ui.home.stars.infostars.InfoStarsFragment"
+        android:label="fragment_info_stars"
+        tools:layout="@layout/fragment_info_stars" />
+    <fragment
+        android:id="@+id/planetsFragment"
+        android:name="com.example.planets.ui.home.planets.PlanetsFragment"
+        android:label="fragment_planets"
+        tools:layout="@layout/fragment_planets" />
+    <fragment
+        android:id="@+id/starsFragment"
+        android:name="com.example.planets.ui.home.stars.StarsFragment"
+        android:label="fragment_stars"
+        tools:layout="@layout/fragment_stars" />
 </navigation>

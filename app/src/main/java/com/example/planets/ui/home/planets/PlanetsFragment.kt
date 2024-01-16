@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
+import androidx.navigation.fragment.findNavController
 import com.example.planets.R
 import com.example.planets.data.model.PlanetsModel
 import com.example.planets.databinding.FragmentPlanetsBinding
@@ -28,8 +30,8 @@ class PlanetsFragment : Fragment() {
         binding.rvPlanets.adapter=adapter
     }
 
-    private fun OnItemClick(possition: Int) {
-
+    private fun OnItemClick(planetsModel: PlanetsModel,possition: Int) {
+        findNavController().navigate(R.id.infoPlanetsFragment, bundleOf("model" to planetsModel,"position" to possition))
     }
 
     private fun initData() {

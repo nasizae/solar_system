@@ -14,4 +14,6 @@
     <string name="stars">Stars</string>
     <string name="name_planets">NAME</string>
     <string name="info">Info</string>
+    <string name="love">Love</string>
+    <string name="general">General</string>
 </resources>

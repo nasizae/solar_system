@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
+import androidx.navigation.fragment.findNavController
 import com.example.planets.R
 import com.example.planets.data.model.StarsModel
 import com.example.planets.databinding.FragmentStarsBinding
@@ -33,30 +35,6 @@ class StarsFragment : Fragment() {
 
     private fun loadData() {
         list = ArrayList()
-        list.add(
-            StarsModel(
-                "Большая медведица",
-                "https://kosmosgid.ru/wp-content/uploads/2020/06/Asterizm-Bolshoj-Kovsh.jpg"
-            )
-        )
-        list.add(
-            StarsModel(
-                "Касиопея",
-                "https://obrazovaka.ru/wp-content/uploads/2021/07/%D0%A1%D0%BE%D0%B7%D0%B2%D0%B5%D0%B7%D0%B4%D0%B8%D0%B5-%D0%9A%D0%B0%D1%81%D1%81%D0%B8%D0%BE%D0%BF%D0%B5%D1%8F-%D1%84%D0%BE%D1%82%D0%BE-e1627455849111.jpg"
-            )
-        )
-        list.add(
-            StarsModel(
-                "Созвездие лебедь",
-                "https://kosmosgid.ru/wp-content/uploads/2019/09/Sozvezdie-Lebed.jpg"
-            )
-        )
-        list.add(
-            StarsModel(
-                "Созвездие пегаса",
-                "https://i.pinimg.com/736x/49/f3/d1/49f3d1724d6b5e03e6921eb9d925112d.jpg"
-            )
-        )
         list.add(
             StarsModel(
                 "Весы",
@@ -133,7 +111,7 @@ class StarsFragment : Fragment() {
 
 
     private fun OnItemClick(position: Int) {
-
+        findNavController().navigate(R.id.infoStarsFragment, bundleOf("position" to position))
     }
 
 }

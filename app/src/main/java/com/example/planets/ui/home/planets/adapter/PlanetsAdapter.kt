@@ -8,7 +8,7 @@ import com.bumptech.glide.Glide
 import com.example.planets.data.model.PlanetsModel
 import com.example.planets.databinding.ItemPlanetsBinding
 
-class PlanetsAdapter(private val list:ArrayList<PlanetsModel>,private val onClick:(possition:Int)->Unit) : Adapter<PlanetsAdapter.PlanetsHolder>() {
+class PlanetsAdapter(private val list:ArrayList<PlanetsModel>,private val onClick:(planetModel:PlanetsModel,possition:Int)->Unit) : Adapter<PlanetsAdapter.PlanetsHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PlanetsHolder {
         return PlanetsHolder(
             ItemPlanetsBinding.inflate(
@@ -31,7 +31,7 @@ class PlanetsAdapter(private val list:ArrayList<PlanetsModel>,private val onClic
                 tvNamePlanets.text=planetsModel.name
                 Glide.with(imgPlanets).load(planetsModel.img).into(imgPlanets)
                 itemView.setOnClickListener {
-                    onClick(adapterPosition)
+                    onClick(planetsModel,adapterPosition)
                 }
             }
         }
