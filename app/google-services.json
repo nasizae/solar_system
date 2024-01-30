@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "723399644854",
+    "firebase_url": "https://planets-94649-default-rtdb.firebaseio.com",
+    "project_id": "planets-94649",
+    "storage_bucket": "planets-94649.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723399644854:android:dc45b607980ab69249f817",
+        "android_client_info": {
+          "package_name": "com.example.planets"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyplTaCbZpuNoiI5vhbFq7uABdK8bpckE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

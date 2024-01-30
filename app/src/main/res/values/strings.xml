@@ -16,4 +16,22 @@
     <string name="info">Info</string>
     <string name="love">Love</string>
     <string name="general">General</string>
+    <string name="day">День</string>
+    <string name="month">Месяц</string>
+    <string name="prognoz">Прогноз</string>
+    <string name="save">Save</string>
+    <string name="sign">Вход</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="not_account">нет аккаунта?</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="registers">Регистрация</string>
+    <string name="fname">Фамилия</string>
+    <string name="sname">Имя</string>
+    <string name="have_account">есть аккаунт?</string>
+    <string name="user_name">USER_Name</string>
+    <string name="sign_in">Войти</string>
+    <string name="exit">Выйти</string>
+    <string name="no">Нет</string>
+    <string name="yes">Да</string>
 </resources>

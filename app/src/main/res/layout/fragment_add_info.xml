@@ -1,14 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/ic_bg_add"
     tools:context=".ui.home.stars.addinfo.AddInfoFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <EditText
+            android:id="@+id/et_day"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_et"
+            android:hint="@string/day"
+            android:gravity="center|start"
+            android:paddingStart="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/et_desc"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingVertical="16dp"
+            />
+        <EditText
+            android:id="@+id/et_month"
+            android:layout_width="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_et"
+            android:paddingVertical="16dp"
+            android:hint="@string/month"
+            android:paddingStart="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@id/et_day"
+            app:layout_constraintBottom_toBottomOf="@id/et_day"
+            app:layout_constraintStart_toEndOf="@id/et_day"
+            app:layout_constraintEnd_toEndOf="@id/et_desc"
+            />
+        <EditText
+            android:id="@+id/et_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/et_day"
+            android:background="@drawable/bg_et"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="60dp"
+            android:paddingVertical="16dp"
+            android:hint="@string/prognoz"
+            android:paddingStart="10dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="16dp"
+        app:cornerRadius="16dp"
+        android:backgroundTint="@color/brown"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/save"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+</LinearLayout>

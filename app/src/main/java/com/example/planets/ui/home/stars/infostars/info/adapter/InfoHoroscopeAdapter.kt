@@ -9,7 +9,7 @@ import com.example.planets.databinding.ItemInfoHoroscopeBinding
 
 class InfoHoroscopeAdapter(private val list: ArrayList<InfoHoroscopeModel>) :
     Adapter<InfoHoroscopeAdapter.InfoHoroscopeHolder>() {
-
+    
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): InfoHoroscopeHolder {
         return InfoHoroscopeHolder(

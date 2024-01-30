@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_profile
+                R.id.navigation_home, R.id.navigation_profile
             )
         )
         supportActionBar?.hide()
@@ -42,6 +42,8 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
         val fragmentWithoutButtonNav = setOf(
             R.id.onboardingFragment,
+            R.id.registrationFragment,
+            R.id.authorizationFragment
         )
         navController.addOnDestinationChangedListener { _, destination, _ ->
             if (fragmentWithoutButtonNav.contains(destination.id)) {

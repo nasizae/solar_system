@@ -12,7 +12,7 @@ import com.example.planets.ui.home.stars.infostars.info.adapter.InfoHoroscopeAda
 
 class InfoFragment : Fragment() {
     private lateinit var binding: FragmentInfoBinding
-    private lateinit var list: ArrayList<InfoHoroscopeModel>
+    private  var list= ArrayList<InfoHoroscopeModel>()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

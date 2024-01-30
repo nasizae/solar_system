@@ -39,6 +39,6 @@ class OnboardingFragment : Fragment() {
 
     private fun OnClick() {
         pref.onOnBoardingShowed()
-        findNavController().navigateUp()
+        findNavController().navigate(R.id.authorizationFragment)
     }
 }

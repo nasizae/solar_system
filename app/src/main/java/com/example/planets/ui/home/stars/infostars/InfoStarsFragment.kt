@@ -43,7 +43,7 @@ class InfoStarsFragment : Fragment() {
             adapter.setArguments(bundle)
         }
         binding.btnBack.setOnClickListener {
-            findNavController().navigateUp()
+            findNavController().navigate(R.id.navigation_home)
         }
     }
     private fun getInfoPosition(position: Int?) {

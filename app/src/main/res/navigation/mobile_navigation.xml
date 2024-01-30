@@ -3,19 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@id/authorizationFragment">
 
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.planets.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
-
-    <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.planets.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_profile"
@@ -47,4 +41,34 @@
         android:name="com.example.planets.ui.home.stars.StarsFragment"
         android:label="fragment_stars"
         tools:layout="@layout/fragment_stars" />
+    <fragment
+        android:id="@+id/addInfoFragment"
+        android:name="com.example.planets.ui.home.stars.addinfo.AddInfoFragment"
+        android:label="fragment_add_info"
+        tools:layout="@layout/fragment_add_info" />
+    <fragment
+        android:id="@+id/generalFragment"
+        android:name="com.example.planets.ui.home.stars.infostars.general.GeneralFragment"
+        android:label="fragment_general"
+        tools:layout="@layout/fragment_general" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.planets.ui.home.stars.infostars.info.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/loveFragment"
+        android:name="com.example.planets.ui.home.stars.infostars.love.LoveFragment"
+        android:label="fragment_love"
+        tools:layout="@layout/fragment_love" />
+    <fragment
+        android:id="@+id/authorizationFragment"
+        android:name="com.example.planets.ui.authorization.AuthorizationFragment"
+        android:label="fragment_authorization"
+        tools:layout="@layout/fragment_authorization" />
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.planets.ui.authorization.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" />
 </navigation>
