@@ -15,6 +15,7 @@
         app:cardCornerRadius="100dp"
         >
         <ImageView
+            android:id="@+id/img_user"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:background="@drawable/user"/>
@@ -25,8 +26,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/user_name"
+        android:fontFamily="@font/montserrat_alternates"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="28sp"
         android:layout_marginTop="16dp"/>
 
     <androidx.cardview.widget.CardView
@@ -34,7 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardElevation="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="80dp"
         android:layout_marginHorizontal="20dp"
         app:cardCornerRadius="16dp">
         <androidx.constraintlayout.widget.ConstraintLayout

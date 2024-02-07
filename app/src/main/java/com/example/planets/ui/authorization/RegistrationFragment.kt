@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.planets.R
-import com.example.planets.data.model.RegistrationModel
+import com.example.planets.data.model.UserModel
 import com.example.planets.databinding.FragmentRegistrationBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -84,7 +84,7 @@ class RegistrationFragment : Fragment() {
         val sname=binding.etSname.text.toString()
         val email=binding.etEmail.text.toString()
         val password=binding.etPassword.text.toString()
-        val users=RegistrationModel(uid,fname, sname, email, password)
+        val users=UserModel(uid,fname, sname, email, password)
         myDataBase.child(uid).setValue(users)
     }
 

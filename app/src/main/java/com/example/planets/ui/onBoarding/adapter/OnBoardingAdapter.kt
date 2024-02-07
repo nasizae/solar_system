@@ -18,7 +18,7 @@ class OnBoardingAdapter(private val onClick: () -> Unit) :
             "Приветствуем вас в увлекательном мире изучения Солнечной системы. " +
                     "Это приложение создано, чтобы предоставить вам захватывающий опыт путешествия по" +
                     " космосу и погружения в тайны нашей галактики.",
-            "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/f1/24/2a/f1242a05-edd0-8eaf-cbe1-8eeb920b69e2/AppIcon-85-220-4-2x.png/1200x630bb.png"
+            "https://miro.medium.com/v2/resize:fit:1200/1*FNXxV1vq6v8eG2pIJYdsiw.png"
         ),
         OnBoardingModel(
             "Исследование Планет",

@@ -7,6 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="16dp"
+        android:layout_marginHorizontal="20dp"
         app:cardElevation="16dp"
         app:layout_constraintTop_toTopOf="parent">
         <LinearLayout
@@ -14,20 +15,17 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical">
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                >
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:scaleType="centerCrop"
                     android:background="@drawable/img_app"/>
-            </androidx.cardview.widget.CardView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Точно хотите выйти с аккаунта?"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_alternates"
+                android:text="Вы уверены что хотите выйти с аккаунта?"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:layout_marginTop="20dp"/>
